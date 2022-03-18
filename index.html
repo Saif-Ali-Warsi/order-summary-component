@@ -11,28 +11,69 @@
     />
     <link href="./style.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&family=Sansita+Swashed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"
+    />
 
-    <title>🔥 Order-Summary-Component 🔥</title>
+    <title>🔥 Order Summary Component 🔥</title>
   </head>
   <body>
-    <div class="card">
+    <div class="card wow fadeInDown box">
       <img
-        src="./images/image-qr-code.png"
-        class="br-code-img"
-        alt="BAR CODE IMG"
+        src="./images/illustration-hero.svg"
+        class="card-hero-image"
+        alt="hero IMG"
       />
 
-      <h3>Improve your front-end skills by building projects</h3>
+      <div class="card-body">
+        <h3>Order Summary</h3>
 
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
+        <p>
+          You can now listen to millions of songs, audiobooks and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="setting-container">
+          <div class="left-content">
+            <div class="music-icon-container">
+              <img
+                src="./images/icon-music.svg"
+                class="icon-music"
+                alt="music IMG"
+              />
+            </div>
+
+            <div>
+              <h4>Annual Plan</h4>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+
+          <span class="change-btn">Change</span>
+        </div>
+
+        <button class="main-btn">Proceed to Payment</button>
+
+        <span class="cancel-btn">Cancel Order</span>
+      </div>
     </div>
 
-    <footer>Made With ❤️ By Saif Warsi</footer>
+    <footer class="wow slideInUp box">Made With ❤️ By Saif Warsi</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // change this if you are not using animate.css
+        offset: 0, // default
+        mobile: true, // keep it on mobile
+        live: true, // track if element updates
+      });
+      wow.init();
+    </script>
   </body>
 </html>
